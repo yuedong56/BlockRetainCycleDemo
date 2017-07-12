@@ -35,6 +35,7 @@
         if (self.caseBlock != nil) {
             self.caseBlock(@"case");
         }
+        self.caseBlock = nil;//加上这句也可以防止内存泄漏
     });
 }
 
